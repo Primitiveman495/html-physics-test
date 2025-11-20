@@ -17,7 +17,7 @@ engine.gravity.y = 1
 
 // Creating Renderer Box
 var render = Render.create({
-        element: document.body,
+        element: document.getElementById("canvas"),
         engine: engine,
         options: {
             width: 800,
