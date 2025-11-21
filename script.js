@@ -20,11 +20,17 @@ var render = Render.create({
         element: document.getElementById("canvas"),
         engine: engine,
         options: {
+        background: "none",
             width: 800,
             height: 600,
-            showAngleIndicator: true
+            showAngleIndicator: true,
+            wireframe: false
         }
     });
 
 // Run the Renderer
 Render.run(render);
+
+// Creating Runner
+var runner = Runner.create();
+Runner.run(runner, engine);
